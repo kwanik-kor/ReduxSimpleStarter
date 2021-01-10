@@ -28,8 +28,6 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 
 ### What I Learned From this Lecture(Kwan Ik) ↓↓
 
-```
-
 #### 1. What is React?
 
 - 리액트란 Javascript Library의 일종으로, 우리가 만든 Component는 HTML을 만들어 낼 것이고, 본 component들을 새롭게 배치함을 통해서 Web을 만들어 낼 것임.
@@ -39,23 +37,23 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 - JSX를 사용하는 가장 단순한 이유는 code의 가시성 및 의미다. return하는 타입만을 통해서 직관적으로 어떤 형태를 return 할 지 알 수 있기 때문.
 
 - React DOM
+
   - React가 Component를 생성하고 관리한다면, React DOM은 실제 DOM과 상호작용한다.
 
 - React App 은 서로 다른 수많은 Component들로 이루어진다. 그리고 이 Component들은 서로 다른 목적을 가지게 된다.
   => 이는 곧 코드의 재사용성을 높이게 된다.
 
-
 #### 2. Export, Class, State
 
- - Export : ES6에서 제공하는 기능으로, 다른 Javascript에서 다른 file의 요소를 참조하기 위함
- - 함수형 Component vs Class 기반 Component의 선택 조건은 ??
- - State  : React에서 가장 이해하기 어려운 요소 중 하나로,자바스크립트 객체로 유저 이벤트를 저장하고 반응하는데 사용되는 요소. Component의 State가 변경될 때마다 즉시 Render가 다시 이루어지게 된다. 단, Class 기반의 Component만 State를 가진 다는 것을 주의 해야 한다.
- 또한, State를 변경할 때는 'this.state.something = value'로 변경하는 것이 아닌, 'this.setState'로 변경함
+- Export : ES6에서 제공하는 기능으로, 다른 Javascript에서 다른 file의 요소를 참조하기 위함
+- 함수형 Component vs Class 기반 Component의 선택 조건은 ??
+- State : React에서 가장 이해하기 어려운 요소 중 하나로,자바스크립트 객체로 유저 이벤트를 저장하고 반응하는데 사용되는 요소. Component의 State가 변경될 때마다 즉시 Render가 다시 이루어지게 된다. 단, Class 기반의 Component만 State를 가진 다는 것을 주의 해야 한다.
+  또한, State를 변경할 때는 'this.state.something = value'로 변경하는 것이 아닌, 'this.setState'로 변경함
 
 #### 3. Event Handler
 
- - Function을 정의하고 이를 기존 HTML의 Event 요소들과 Binding 해주면 됨
- - Controlled Component : State에 의해 값이 지정되는 요소(제어 요소)
+- Function을 정의하고 이를 기존 HTML의 Event 요소들과 Binding 해주면 됨
+- Controlled Component : State에 의해 값이 지정되는 요소(제어 요소)
 
 ```
 
@@ -66,3 +64,4 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 - React DOOM 이 렌더링을 하려하지만 어디에 Rendering을 할지 모르겠다.
 - Taret Container 즉, HTML 노드가 필요하단 것
 - ReactDOM.render(\<App /\>, _document.querySelector('.container'_));
+```
