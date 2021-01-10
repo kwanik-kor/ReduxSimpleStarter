@@ -55,7 +55,15 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 - Function을 정의하고 이를 기존 HTML의 Event 요소들과 Binding 해주면 됨
 - Controlled Component : State에 의해 값이 지정되는 요소(제어 요소)
 
-```
+#### 4. Props
+
+- 자식 요소에게 Props를 전달해줘야 함
+- 단, Class 형 component인 경우에는 this.props로 선언해줘야 함
+- property에 callback을 전달함으로써, 부모 Component와 자식 Component간 소통이 가능해짐
+
+#### 5. Redux
+
+- React가 Component Level이라면 Redux는 Application 단위라고 볼 수 있음
 
 #### TROUBLE SHOOTING
 
@@ -64,4 +72,9 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 - React DOOM 이 렌더링을 하려하지만 어디에 Rendering을 할지 모르겠다.
 - Taret Container 즉, HTML 노드가 필요하단 것
 - ReactDOM.render(\<App /\>, _document.querySelector('.container'_));
-```
+
+2. Each child in an array or iterator should have a unique "key" prop.
+
+- React는 과하게 영리한 부분이 있어, 추후 List를 modify하기 위해서는 각각의 ID를 부여해줘야 한다.
+- 이는 Process를 효율적으로 진행하게 도와주나, 해당 error를 뿜지 않기 위해 주의해야 한다.
+- key={}
