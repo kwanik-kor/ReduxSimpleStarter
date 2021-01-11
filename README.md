@@ -64,6 +64,8 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 #### 5. Redux
 
 - React가 Component Level이라면 Redux는 Application 단위라고 볼 수 있음
+- Redux는 아직 초기단계인 것을 잊지 말아야 함
+- Redux와 다른 라이브러리와의 차이점은, 한 오브젝트 안에 모든 Application의 데이터를 집중시킨다는 것이다.
 
 #### TROUBLE SHOOTING
 
